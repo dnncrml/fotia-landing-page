@@ -4,82 +4,124 @@
   <title>Fotia Systems</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Inter', sans-serif;
+      background: #f6f7f9;
       color: #1a1a1a;
-      background: #f5f5f5;
-    }
-
-    h1, h2 {
-      margin: 0 0 20px;
     }
 
     section {
-      padding: 80px 20px;
+      padding: 100px 20px;
       text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    p {
+      color: #6b7280;
+      max-width: 600px;
+      margin: 10px auto;
+    }
+
+    .highlight {
+      color: #f4a7a7;
     }
 
     /* HERO */
     .hero {
-      background: linear-gradient(135deg, #0c1b2a, #1c2e44);
+      background: radial-gradient(circle at top, #1e3a5f, #0b1b2b);
       color: white;
-      padding: 120px 20px;
+      padding: 140px 20px;
     }
 
-    .hero h1 {
-      font-size: 42px;
-      max-width: 700px;
-      margin: auto;
+    .hero p {
+      color: #cbd5e1;
     }
 
-    .highlight {
-      color: #f5a6a6;
-    }
-
+    /* BUTTON */
     .btn {
       display: inline-block;
       margin-top: 30px;
-      padding: 14px 26px;
-      background: #f5a6a6;
+      padding: 14px 28px;
+      background: #f4a7a7;
       color: black;
-      border-radius: 30px;
+      border-radius: 999px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(244,167,167,0.3);
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto 0;
     }
 
     /* CARDS */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 25px;
+      border-radius: 14px;
       text-align: left;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* LIGHT SECTION */
+    .light {
+      background: #f6f7f9;
     }
 
     /* IGNITE */
     .ignite {
-      max-width: 800px;
-      margin: auto;
+      max-width: 700px;
+      margin: 40px auto;
       text-align: left;
     }
 
     .ignite-item {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .ignite-letter {
+      background: #0b1b2b;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-weight: bold;
     }
 
     /* CTA DARK */
     .cta-dark {
-      background: linear-gradient(135deg, #0c1b2a, #1c2e44);
+      background: radial-gradient(circle at top, #1e3a5f, #0b1b2b);
       color: white;
     }
 
@@ -108,7 +150,7 @@
 </section>
 
 <!-- PROCESS -->
-<section class="fade-up">
+<section class="light fade-up">
   <h2>Built around your <span class="highlight">process</span></h2>
   <div class="grid">
     <div class="card">Systems Audit</div>
@@ -123,7 +165,7 @@
   <h2>Managing leads shouldn't feel like <span class="highlight">herding cats</span></h2>
   <div class="grid">
     <div class="card">Clear Pipelines</div>
-    <div class="card">Follow-ups</div>
+    <div class="card">Dependable Follow-up</div>
     <div class="card">Workflows</div>
     <div class="card">Clarity</div>
   </div>
@@ -133,12 +175,12 @@
 <section class="fade-up">
   <h2>The IGNITE Process 🔥</h2>
   <div class="ignite">
-    <div class="ignite-item"><b>I</b> Identify bottlenecks</div>
-    <div class="ignite-item"><b>G</b> Gather intelligence</div>
-    <div class="ignite-item"><b>N</b> Navigate strategy</div>
-    <div class="ignite-item"><b>I</b> Illustrate blueprint</div>
-    <div class="ignite-item"><b>T</b> Tailor systems</div>
-    <div class="ignite-item"><b>E</b> Execute & elevate</div>
+    <div class="ignite-item"><div class="ignite-letter">I</div> Identify bottlenecks</div>
+    <div class="ignite-item"><div class="ignite-letter">G</div> Gather intelligence</div>
+    <div class="ignite-item"><div class="ignite-letter">N</div> Navigate strategy</div>
+    <div class="ignite-item"><div class="ignite-letter">I</div> Illustrate blueprint</div>
+    <div class="ignite-item"><div class="ignite-letter">T</div> Tailor systems</div>
+    <div class="ignite-item"><div class="ignite-letter">E</div> Execute & elevate</div>
   </div>
 </section>
 
